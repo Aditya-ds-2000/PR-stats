@@ -55,6 +55,6 @@ app.get('/', async (req, res) => {
     res.render('index', { stats: JSON.stringify(stats), colors });
 });
 
-app.listen(8000, process.env.IP, () => {
+app.listen(process.env.PORT, process.env.IP, () => {
     console.log('http://localhost:8000');
 });
